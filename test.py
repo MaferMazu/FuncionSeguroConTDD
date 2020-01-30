@@ -29,7 +29,14 @@ class TestPension(unittest.TestCase):
 	#Mujer de 60 y con 750 cotizaciones
 	def testPensionFemale750QuotAnd60Y(self):
 		date = datetime.datetime(1960, 1, 1)
-		p=Person("Pedro","F",date,750)
+		p=Person("Maria","F",date,750)
+		self.assertTrue(p.AbleIVSSPension())
+
+	#Quinto caso de prueba:
+	#Mujer de 55 y con 750 cotizaciones
+	def testPensionFemale750QuotAnd55Y(self):
+		date = datetime.datetime(1965, 1, 1)
+		p=Person("Maria","F",date,750)
 		self.assertTrue(p.AbleIVSSPension())
 
 if __name__ == '__main__':
