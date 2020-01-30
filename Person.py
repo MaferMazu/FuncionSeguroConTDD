@@ -13,3 +13,5 @@ class Person:
     def AbleIVSSPension(self):
         return (self.quotation >= 750)
 
+
+
