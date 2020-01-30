@@ -25,5 +25,12 @@ class TestPension(unittest.TestCase):
 		p=Person("Pedro","M",date,750)
 		self.assertTrue(p.AbleIVSSPension())
 
+	#Cuarto caso de prueba:
+	#Mujer de 60 y con 750 cotizaciones
+	def testPensionFemale750QuotAnd60Y(self):
+		date = datetime.datetime(1960, 1, 1)
+		p=Person("Pedro","F",date,750)
+		self.assertTrue(p.AbleIVSSPension())
+
 if __name__ == '__main__':
 	unittest.main()
