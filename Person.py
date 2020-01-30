@@ -11,4 +11,5 @@ class Person:
         return self.name + " " + self.genre + " " + str(self.birth.year) + " " + str(self.quotation)
 
     def AbleIVSSPension(self):
-        return True
+        return (self.quotation >= 750)
+
